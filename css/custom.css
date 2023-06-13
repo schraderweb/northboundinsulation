@@ -6090,7 +6090,7 @@ footer h3::after {
 }
 
 .links-widget>li::before {
-  content: '';
+  content: ' ';
   width: 9px;
   height: 9px;
   background-color: transparent;
@@ -6106,6 +6106,12 @@ footer h3::after {
 .links-widget>li:hover::before {
   background-color: #A8C41B;
   border-color: #A8C41B;
+}
+
+@media (max-width: 480px) {
+.srvs_img{
+  margin-top:30px;
+}  
 }
 
 
