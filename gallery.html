@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile responsive meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="html 5 template, cooling, heating, electricity services"
+    <!-- main stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/light_box.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
     />
-    <meta name="author" content="tonytemplates.com" />
     <link rel="icon" href="images/favicon_new.png" />
-    <title>Northbound Insulation | Home Insulation</title>
+    <title>Gallery| Northbound Insulation</title>
     <!-- Bootstrap core CSS -->
     <link href="css/plugins/bootstrap.min.css" rel="stylesheet" />
     <link href="css/plugins/bootstrap-datetimepicker.css" rel="stylesheet" />
@@ -22,6 +24,43 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <!-- Icon Font-->
     <link href="iconfont/style.css" rel="stylesheet" />
+    <style>
+      img.zoom {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+      }
+
+      .thumb {
+        margin-bottom: 30px;
+      }
+    </style>
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = '//stats.cybersecure.pro/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '6']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+    <title>Document</title>
   </head>
   <body class="home layout2">
     <div class="preloader">
@@ -31,6 +70,8 @@
         <div class="small-circle"></div>
       </div>
     </div>
+    <!--preloader end-->
+
     <!--preloader end-->
     <header>
       <div class="top_header">
@@ -219,36 +260,88 @@
         <li><a href="contact-us.html" title="">contact us</a></li>
       </ul>
     </div>
-    <!--responsive-menu end-->
-    <div class="banner-section">
-      <div class="banner-slider">
-        <div class="banner-slide">
-          <img src="images/resources/banner-img1.jpg" alt="" />
-          <div class="fig_text">
-            <h3>Bringing Comfort to</h3>
-            <h2>Your Home 24/7!</h2>
+    <section class="pager-sec">
+      <div class="container">
+        <ul class="pager-info">
+          <li><a href="index.html" title="">Home</a></li>
+          <li><span>Gallery</span></li>
+        </ul>
+        <!--pager-info end-->
+      </div>
+    </section>
+    <div class="pad_84_70 wdt_100">
+      <div class="container">
+        <h2>insulation</h2>
+        <p style="font-size: 1.5em">insulation work</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a
+              href="images/resources/simg1.jpg"
+              class="fancybox"
+              rel="ligthbox"
+            >
+              <img
+                src="images/resources/simg1.jpg"
+                class="zoom img-fluid"
+                alt=""
+              />
+            </a>
           </div>
-          <!--fig_text end-->
-        </div>
-        <!--banner-slide end-->
-        <div class="banner-slide">
-          <img src="images/6804316372_a776b82242.jpg" alt="" />
-          <div class="fig_text">
-            <h3>High-Quality Insulation</h3>
-            <h2>Home Insulation</h2>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a
+              href="images/resources/simg2.jpg"
+              class="fancybox"
+              rel="ligthbox"
+            >
+              <img
+                src="images/resources/simg2.jpg"
+                class="zoom img-fluid"
+                alt=""
+              />
+            </a>
           </div>
-          <!--fig_text end-->
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a
+              href="images/resources/simg3.jpg"
+              class="fancybox"
+              rel="ligthbox"
+            >
+              <img
+                src="images/resources/simg3.jpg"
+                class="zoom img-fluid"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a
+              href="images/resources/simg4.jpg"
+              class="fancybox"
+              rel="ligthbox"
+            >
+              <img
+                src="images/resources/simg4.jpg"
+                class="zoom img-fluid"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a
+              href="images/resources/simg5.jpg"
+              class="fancybox"
+              rel="ligthbox"
+            >
+              <img
+                src="images/resources/simg5.jpg"
+                class="zoom img-fluid"
+                alt=""
+              />
+            </a>
+          </div>
         </div>
       </div>
-      <!--banner-slider end-->
-      <div class="fgt-logo">
-        <!-- <img src="images/ft-logo.png" alt="" /> -->
-      </div>
-      <!--fgt-logo end-->
-      <div class="fig_sec" style="display: none"></div>
-      <!--fig_sec end-->
     </div>
-    <!--banner-section end-->
     <section class="block service-block">
       <div class="container">
         <div class="sec-title">
@@ -1008,7 +1101,6 @@
         <!--direction_map end-->
       </div>
     </div>
-    <!--popup_form end-->
     <script src="js/jquery.js"></script>
     <script src="js/plugins/bootstrap.min.js"></script>
     <script src="js/plugins/moment.min.js"></script>
@@ -1019,5 +1111,21 @@
     <script src="js/plugins/custom-tabs.js"></script>
     <script src="js/forms.js"></script>
     <script src="js/scripts.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/imagelightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--load js library-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/gallery.js"></script>
+
+    <!-- End script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   </body>
 </html>
