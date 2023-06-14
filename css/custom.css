@@ -2953,6 +2953,7 @@ footer {
 
 .pager-sec {
   padding: 14px 0;
+  margin-left:15px;
 }
 
 .pager-info {
@@ -3424,8 +3425,10 @@ footer {
   padding-top: 0 !important;
 }
 
-.layout2 .page-content {
+.page-content {
   padding: 100px 0;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .blog-page>.row>.col-lg-9 {
@@ -3612,6 +3615,10 @@ blockquote:before {
   width: 100%;
 }
 
+.bodyAbout{
+  background-color: #FFFFFF;
+  background-image: none;
+}
 
 
 .pagination {
