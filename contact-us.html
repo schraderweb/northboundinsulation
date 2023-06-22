@@ -265,7 +265,7 @@
               <div class="col-lg-6 col-md-6">
                 <form
                   class="contFrm"
-                  action="https://formsubmit.co/63f01953e3c66265b53e1901fd14e28b"
+                  id="contact-form"
                   method="POST"
                 >
                   <div class="row">
@@ -319,14 +319,6 @@
                         required
                       ></textarea>
                     </div>
-                    <input type="text" name="_honey" style="display: none" />
-                    <input type="hidden" name="_template" value="table" />
-                    <input
-                      type="hidden"
-                      name="_subject"
-                      value="Contact Response from Perfect Shore Site!"
-                    />
-                    <input type="hidden" name="_next" value="northboundinsulation.vercel.app/thanks.html" />
                     <div class="col-12">
                       <button
                         type="submit"
@@ -1086,5 +1078,29 @@
     <script src="js/plugins/custom-tabs.js"></script>
     <script src="js/forms.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      
+    $('#contact-form').on('submit', function(event) {
+    event.preventDefault(); // prevent reload
+    
+    var formData = new FormData(this);
+    formData.append('service_id', 'service_vq6c8sd');
+    formData.append('template_id', 'template_64nk5hb');
+    formData.append('user_id', 'zhxh31zFeAeDgG87b');
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false // no need to parse formData to string
+    }).done(function() {
+        window.location.href="thanks.html";
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+});
+     
+    </script>
   </body>
 </html>
